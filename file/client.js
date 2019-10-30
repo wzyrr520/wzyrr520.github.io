@@ -19,7 +19,7 @@ function analyze() {
     el('analyze-button').innerHTML = 'Analyzing...';
     var xhr = new XMLHttpRequest();
     var loc = window.location
-    xhr.open('POST', 'https://123.57.235.182', true);
+    xhr.open('POST', 'http://123.57.235.182:8080', true);
     xhr.onerror = function() {alert (xhr.responseText);}
     xhr.onload = function(e) {
         if (this.readyState === 4) {
