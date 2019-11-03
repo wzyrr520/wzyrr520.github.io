@@ -35,8 +35,10 @@ function analyze() {
 				var response = JSON.parse(e.target.responseText);
 				if(response.result == 'Normal')
 					var re = '正常';
-				else 
+				else if(response.result == 'Abnormal')
 					var re = '异常';
+				else
+					alert ('图片格式错误！')
 				var template = "结果为：{0}，且概率为{1}";
 				var site = response.Probability;
 				var msg = String.format(template, re, site);
