@@ -28,7 +28,7 @@ function analyze() {
 		el('analyze-button').innerHTML = '分析中...';
 		var xhr = new XMLHttpRequest();
 		var loc = window.location
-		xhr.open('POST', 'http://123.57.235.182:8080', true);
+		xhr.open('POST', 'http://123.57.235.182:1573', true);
 		xhr.onerror = function() {alert ('网络错误！');}
 		xhr.onload = function(e) {
 			if (this.readyState === 4) {
